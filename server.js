@@ -16,7 +16,7 @@ mongoose.connect("mongodb://localhost:27017/cyclesGame", {
 }).then(() => console.log("✅ Connected to MongoDB"))
 .catch((err) => console.error("❌ MongoDB error:", err));
 
-// Define schema and model
+// Defines schema and model
 const saveSchema = new mongoose.Schema({
     playerName: String,
     state: String,
